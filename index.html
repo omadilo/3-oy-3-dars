@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Finder</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="top-section">
+        <div class="logo">devfinder</div>
+        <div class="dark-mode-toggle">
+          <span class="dark-mode-text">DARK</span>
+          <div class="dark-mode-icon"></div>
+        </div>
+      </section>
+
+      <section class="search-section">
+        <div>
+          <img src="images/search-icon.svg" alt="🔎" />
+          <input
+            id="input-element"
+            type="text"
+            placeholder="Search GitHub username..."
+          />
+        </div>
+        <div>
+          <span class="no-results">No results</span>
+          <button class="search-button">Search</button>
+        </div>
+      </section>
+
+      <section class="profile-section">
+        <img
+          src="images/profile-picture.png"
+          alt="Profile Picture Here"
+          width="117px"
+          height="117px"
+          class="pfp"
+        />
+
+        <div class="right-section">
+          <div class="profile-info">
+            <img
+              src="images/profile-picture.png"
+              alt="pfp"
+              width="117px"
+              height="117px"
+              class="pfp-mobile"
+            />
+            <div class="right__top">
+              <div class="user-name">
+                <span class="name">The Octocat</span>
+                <span class="username">@octocat</span>
+              </div>
+              <span class="joined-date">Joined 25 Jan 2011</span>
+            </div>
+          </div>
+
+          <span class="bio"
+            >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
+            odio. Quisque volutpat mattis eros.</span
+          >
+
+          <div class="stats-container">
+            <div class="stat">
+              <span class="stat-label">Repos</span>
+              <span class="stat-number">8</span>
+            </div>
+            <div class="stat">
+              <span class="stat-label">Followers</span>
+              <span class="stat-number">3938</span>
+            </div>
+            <div class="stat">
+              <span class="stat-label">Following</span>
+              <span class="stat-number">9</span>
+            </div>
+          </div>
+
+          <div class="links-container">
+            <div class="link">
+              <div class="link-icon location"></div>
+              <span>San Francisco</span>
+            </div>
+            <div class="link">
+              <div class="link-icon twitter"></div>
+              <span class="not-available">Not Available</span>
+            </div>
+            <div class="link">
+              <div class="link-icon url"></div>
+              <span class="github-link">https://github.blog</span>
+            </div>
+            <div class="link">
+              <div class="link-icon office"></div>
+              <span>@github</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
